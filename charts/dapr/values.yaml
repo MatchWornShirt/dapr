@@ -1,6 +1,6 @@
 global:
-  registry: docker.io/daprio
-  tag: 'edge'
+  registry: 964319972177.dkr.ecr.eu-west-1.amazonaws.com
+  tag: 'mws-build-23422-linux-amd64'
   dnsSuffix: ".cluster.local"
   logAsJson: false
   imagePullPolicy: IfNotPresent
@@ -8,7 +8,7 @@ global:
   nodeSelector: {}
   tolerations: []
   ha:
-    enabled: false
+    enabled: true
     replicaCount: 3
     disruption:
       minimumAvailable: ""
